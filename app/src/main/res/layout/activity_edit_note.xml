@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNoteActivity"
+    android:orientation="vertical"
+    android:id="@+id/edit_note_background">
+
+    <include layout="@layout/appbar_edit_note" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="Title"
+            android:textSize="42dp"
+            android:textColor="@color/black"
+            android:textColorHint="#6C6767"
+            android:paddingTop="10dp"
+            android:paddingHorizontal="25dp"
+            android:background="@null"
+            android:id="@+id/edit_title_txt"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:padding="25dp"
+            android:src="@drawable/add_image"
+            android:id="@+id/edit_note_image"
+            android:scaleType="fitXY"/>
+
+        <EditText
+            android:textColor="#1C1C1C"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:hint="Tap to Add Description"
+            android:textSize="25dp"
+            android:gravity="start"
+            android:textColorHint="#6C6767"
+            android:paddingHorizontal="25dp"
+            android:paddingVertical="10dp"
+            android:background="@null"
+            android:id="@+id/edit_description_txt"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#8cbbf1"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/back_icon"
+                    android:id="@+id/edit_back_btn"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:text="Notes"
+                    android:textSize="25sp"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    android:id="@+id/edit_toolbar_title"
+                    android:layout_marginLeft="15dp"
+
+                    />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/set_color"
+                    android:id="@+id/edit_color"
+                    android:layout_marginRight="20dp"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/add_image"
+                    android:id="@+id/edit_image"
+                    android:layout_marginRight="20dp"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/unlock_icon"
+                    android:id="@+id/edit_password"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginVertical="17dp"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/save_icon"
+                    android:id="@+id/edit_btn"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="10dp"
+                    />
+
+            </LinearLayout>
+
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+</LinearLayout>
